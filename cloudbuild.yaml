@@ -1,8 +1,8 @@
 steps:
 
 - name: ubuntu
-  entrypoint: yarn
-  args: ['install']
+  entrypoint: node 
+  args: ['yarn', 'install']
   
 # - name: npm
 #   args: ['install', 'yarn']
