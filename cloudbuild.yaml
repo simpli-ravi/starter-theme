@@ -1,7 +1,7 @@
 steps:
 
-- name: yarn
+- name: node
   args: ['install']
 
-- name: yarn
+- name: node
   args: ['deploy']
