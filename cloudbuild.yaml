@@ -1,10 +1,14 @@
 steps:
 
-- name: npm
-  args: ['install', 'yarn']
-  
-- name: yarn
+- name: node
+  entrypoint: npm
   args: ['install']
+  
+# - name: npm
+#   args: ['install', 'yarn']
+  
+# - name: yarn
+#   args: ['install']
 
-- name: yarn
-  args: ['deploy']
+# - name: yarn
+#   args: ['deploy']
