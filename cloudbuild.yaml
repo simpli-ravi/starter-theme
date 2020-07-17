@@ -1,14 +1,13 @@
 steps:
-
-- name: ubuntu
-  entrypoint: node 
-  args: ['yarn', 'install']
-  
-# - name: npm
-#   args: ['install', 'yarn']
-  
-# - name: yarn
-#   args: ['install']
-
-# - name: yarn
-#   args: ['deploy']
+# Install dependencies
+- name: node
+  entrypoint: yarn
+  args: ['install']
+# Run tests
+- name: node
+  entrypoint: yarn
+  args: ['test']
+# Run custom commands
+- name: node
+  entrypoint: yarn
+  args: ['run', 'build']
